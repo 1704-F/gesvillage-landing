@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'standalone',
   images: {
-    domains: ['localhost'],
+    unoptimized: true, // Vous pouvez essayer cette option si les problèmes persistent
   },
 }
 
