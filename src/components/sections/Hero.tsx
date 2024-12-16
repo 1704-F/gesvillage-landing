@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '../ui/button';
 import { motion } from 'framer-motion';
 import { ArrowRight, Droplet, Receipt, LineChart, Smartphone } from 'lucide-react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -93,12 +94,15 @@ const Hero = () => {
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3"></div>
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform -rotate-3"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
-                <img
-                  src="/img/dashboard.jpg"
-                  alt="Dashboard Preview"
-                  className="w-full h-auto"
-                />
-              </div>
+  <Image
+    src="/img/dashboard.jpg" // L'image doit être dans le dossier public
+    alt="Dashboard Preview"
+    width={1200}
+    height={800}
+    priority
+    className="w-full h-auto"
+  />
+</div>
             </div>
           </motion.div>
         </div>
