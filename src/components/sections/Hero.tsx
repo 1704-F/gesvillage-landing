@@ -95,7 +95,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform -rotate-3"></div>
               <div className="relative bg-white rounded-3xl shadow-xl overflow-hidden">
   <Image
-    src="/img/dashboard.jpg"  // Le chemin doit commencer par "/"
+    src="/img/tableau.jpg"  // Le chemin doit commencer par "/"
     alt="Dashboard Preview"
     width={1200}
     height={800}
