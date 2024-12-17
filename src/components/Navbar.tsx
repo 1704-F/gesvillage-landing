@@ -42,9 +42,11 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+            <a href="https://app.gesvillage.com">
             <Button className="bg-primary hover:bg-primary/90">
               Démarrer
             </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,9 +76,11 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="px-4">
+              <a href="https://app.gesvillage.com">
                 <Button className="bg-primary hover:bg-primary/90 w-full">
                   Démarrer
                 </Button>
+                </a>
               </div>
             </div>
           </div>

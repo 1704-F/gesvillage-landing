@@ -9,17 +9,17 @@ const Hero = () => {
   return (
     <div className="pt-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-4rem)]">
+         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-4rem)]">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600 m-0">
               Gérez votre eau intelligemment
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-12 max-w-2xl">
               Optimisez la gestion de vos forages d&apos;eau grâce à notre plateforme innovante.
               Suivez, analysez et facturez éfficassement les consommateurs.
             </p>
