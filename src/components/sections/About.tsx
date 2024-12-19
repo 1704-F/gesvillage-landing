@@ -7,6 +7,7 @@ import {  Users, Droplet, Target, CheckCircle, Globe } from 'lucide-react';
 
 const About = () => {
   return (
+<section id="about">
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-[#2081E2] to-blue-600 text-white py-20">
@@ -129,6 +130,7 @@ const About = () => {
         </div>
       </div>
     </div>
+</section>
   );
 };
 
