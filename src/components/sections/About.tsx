@@ -126,9 +126,6 @@ const About = () => {
             Vous êtes une commune, un village, ou un partenaire au Sénégal ?
             Découvrez comment GesVillage peut transformer la gestion de vos ressources en eau.
           </p>
-          <button className="bg-white text-[#2081E2] px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
-            Contactez-nous
-          </button>
         </div>
       </div>
     </div>
