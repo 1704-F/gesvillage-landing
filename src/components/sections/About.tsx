@@ -3,14 +3,14 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import {  Users, Droplet, Target, CheckCircle, Globe } from 'lucide-react';
+import { Users, Droplet, Target, CheckCircle, Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const About = () => {
   return (
-<section id="about">
-    <div className="min-h-screen bg-gray-50">
+    <section id="about" className="pt-20">
       {/* Hero Section */}
-      <div className="bg-gradient-to-b from-[#2081E2] to-blue-600 text-white py-20">
+      <div className="bg-gradient-to-b from-primary to-blue-600 text-white py-20">
         <div className="container mx-auto px-4">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -31,45 +31,47 @@ const About = () => {
       </div>
 
       {/* Vision et Mission */}
-      <div className="py-20 container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg"
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <Target className="w-8 h-8 text-primary" />
-              <h2 className="text-2xl font-bold">Notre Vision</h2>
-            </div>
-            <p className="text-gray-600">
-              Contribuer à un Sénégal où l&apos;accès à l&apos;eau potable est sécurisé, 
-              transparent et accessible à toutes les populations grâce à une gestion 
-              intelligente des ressources.
-            </p>
-          </motion.div>
+      <div className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12">
+            <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white p-8 rounded-xl shadow-lg"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <Target className="w-8 h-8 text-primary" />
+                <h2 className="text-2xl font-bold">Notre Vision</h2>
+              </div>
+              <p className="text-gray-600">
+                Contribuer à un Sénégal où l&apos;accès à l&apos;eau potable est sécurisé, 
+                transparent et accessible à toutes les populations grâce à une gestion 
+                intelligente des ressources.
+              </p>
+            </motion.div>
 
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-white p-8 rounded-xl shadow-lg"
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <Globe className="w-8 h-8 text-primary" />
-              <h2 className="text-2xl font-bold">Notre Mission</h2>
-            </div>
-            <p className="text-gray-600">
-              Accompagner les communes et villages du Sénégal dans la modernisation 
-              de la gestion de l&apos;eau à travers des solutions numériques adaptées.
-            </p>
-          </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white p-8 rounded-xl shadow-lg"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <Globe className="w-8 h-8 text-primary" />
+                <h2 className="text-2xl font-bold">Notre Mission</h2>
+              </div>
+              <p className="text-gray-600">
+                Accompagner les communes et villages du Sénégal dans la modernisation 
+                de la gestion de l&apos;eau à travers des solutions numériques adaptées.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </div>
 
       {/* Pourquoi GesVillage */}
-      <div className="bg-white py-20">
+      <div className="py-20">
         <div className="container mx-auto px-4">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -89,13 +91,13 @@ const About = () => {
               },
               {
                 icon: <Users className="w-8 h-8 text-primary" />,
-                title: "Simplicité d'utilisation",
+                title: "Simplicité d&apos;utilisation",
                 description: "Une plateforme intuitive, accessible aux utilisateurs de tout niveau technique."
               },
               {
                 icon: <Droplet className="w-8 h-8 text-primary" />,
                 title: "Impact social",
-                description: "Améliorer la transparence financière et optimiser l'accès à une ressource essentielle : l'eau potable."
+                description: "Améliorer la transparence financière et optimiser l&apos;accès à une ressource essentielle : l&apos;eau potable."
               }
             ].map((item, index) => (
               <motion.div
@@ -104,7 +106,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="text-center p-6"
+                className="text-center p-6 bg-white rounded-xl shadow-lg"
               >
                 <div className="flex justify-center mb-4">
                   {item.icon}
@@ -118,7 +120,7 @@ const About = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-[#2081E2] text-white py-20">
+      <div className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
             Rejoignez GesVillage
@@ -127,10 +129,12 @@ const About = () => {
             Vous êtes une commune, un village, ou un partenaire au Sénégal ?
             Découvrez comment GesVillage peut transformer la gestion de vos ressources en eau.
           </p>
+          <Button className="bg-white text-primary hover:bg-gray-100">
+            Contactez-nous
+          </Button>
         </div>
       </div>
-    </div>
-</section>
+    </section>
   );
 };
 
