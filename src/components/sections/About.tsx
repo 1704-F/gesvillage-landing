@@ -91,13 +91,13 @@ const About = () => {
               },
               {
                 icon: <Users className="w-8 h-8 text-primary" />,
-                title: "Simplicité d&apos;utilisation",
+                title: "Simplicité d'utilisation",
                 description: "Une plateforme intuitive, accessible aux utilisateurs de tout niveau technique."
               },
               {
                 icon: <Droplet className="w-8 h-8 text-primary" />,
                 title: "Impact social",
-                description: "Améliorer la transparence financière et optimiser l&apos;accès à une ressource essentielle : l&apos;eau potable."
+                description: "Améliorer la transparence financière et optimiser l'accès à une ressource essentielle : l'eau potable."
               }
             ].map((item, index) => (
               <motion.div

@@ -13,6 +13,7 @@ const Navbar = () => {
     { label: 'Accueil', href: '/' },
     { label: 'À propos', href: '#about' },
     { label: 'Fonctionnalités', href: '#features' },
+    { label: 'Application mobile', href: '#mobile-app' },
     { label: 'Tarifs', href: '#pricing' },
    
   ];
