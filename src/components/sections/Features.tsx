@@ -8,38 +8,38 @@ import { Card, CardContent } from '../ui/card';
 const featuresList = [
   {
     icon: <BarChart3 className="w-8 h-8 text-primary" />,
-    title: "Gestion des Compteurs",
-    description: "Suivez la consommation de chaque compteurs et analysez avec précision",
+    title: "Gestion Numérique des Forages",
+    description: "Digitalisation complète du suivi des forages avec des relevés précis et une maintenance préventive",
     image: "/img/compteur.jpg"
   },
   {
-    icon: <Bell className="w-8 h-8 text-primary" />,
-    title: "Alertes Intelligentes",
-    description: "Recevez des notifications instantanées en cas d'anomalies ou de consommation excessive",
-    image: "/img/alerte.jpg"
-  },
-  {
-    icon: <Wallet className="w-8 h-8 text-primary" />,
-    title: "Facturation Automatisée",
-    description: "Générez et gérez automatiquement vos factures selon votre grille tarifaire",
-    image: "/img/facture.jpg"
-  },
-  {
     icon: <Users2 className="w-8 h-8 text-primary" />,
-    title: "Gestion des Consommateurs",
-    description: "Gérez efficacement vos abonnés et leur historique de consommation",
+    title: "Gestion des ASUFOR",
+    description: "Facilitez la transition des ASUFOR vers une gestion moderne avec un suivi transparent des activités",
     image: "/img/conso.jpg"
   },
   {
+    icon: <Wallet className="w-8 h-8 text-primary" />,
+    title: "Facturation et Recouvrement",
+    description: "Réduisez les impayés grâce à un système de facturation clair et un suivi rigoureux des paiements",
+    image: "/img/facture.jpg"
+  },
+  {
     icon: <LineChart className="w-8 h-8 text-primary" />,
-    title: "Tableaux de Bord",
-    description: "Visualisez vos données clés et prenez des décisions éclairées",
+    title: "Rapports et Analyses",
+    description: "Générez des rapports détaillés sur la performance des forages et les taux de recouvrement",
     image: "/img/dashF.jpg"
   },
   {
+    icon: <Bell className="w-8 h-8 text-primary" />,
+    title: "Supervision en Temps Réel",
+    description: "Suivez l'état des infrastructures et anticipez les besoins de maintenance",
+    image: "/img/alerte.jpg"
+  },
+  {
     icon: <Settings2 className="w-8 h-8 text-primary" />,
-    title: "Paramétrage Flexible",
-    description: "Configurez votre système selon vos besoins spécifiques",
+    title: "Gestion Multi-sites",
+    description: "Gérez efficacement plusieurs forages avec une vision consolidée des performances",
     image: "/img/setting.jpg"
   }
 ];
@@ -57,15 +57,18 @@ const Features = () => {
           >
             Fonctionnalités Principales
           </motion.h2>
+
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-2xl mx-auto"
-          >
-            Découvrez comment notre plateforme simplifie la gestion de vos forages d&apos;eau
-          </motion.p>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.2 }}
+  className="text-xl text-gray-600 max-w-2xl mx-auto"
+>
+  Une solution complète pour accompagner la réforme de l&apos;hydraulique rurale et améliorer 
+  la gestion des forages au Sénégal
+</motion.p>
+         
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
