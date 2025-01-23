@@ -47,12 +47,24 @@ const Hero = () => {
             un suivi efficace et une gestion durable des ressources en eau.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
+
             <a href="https://wa.me/+33775802267" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 Essayer la démo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
+
+            <a href="/img/gesVillage.apk" download>
+   <Button 
+     size="lg" 
+     variant="outline"
+     className="border-primary text-primary hover:bg-primary/10"
+   >
+     Télécharger l&apos;app
+     <Smartphone className="ml-2 h-5 w-5" />
+   </Button>
+ </a>
 
               
             </div>
