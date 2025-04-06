@@ -9,34 +9,36 @@ import Image from 'next/image';
 const features = [
   {
     icon: <LayoutDashboard className="w-8 h-8 text-primary" />,
-    title: "Tableau de Bord Intuitif",
+    title: "Tableau de Bord Personnalisé",
     details: [
-      "Vue d'ensemble de tous vos compteurs",
-      "Suivi des dernières consommations",
-      "Accès rapide aux informations essentielles"
+      "Vue d'ensemble de votre consommation",
+      "Suivi des derniers relevés de compteur",
+      "Visualisation claire des tendances d'utilisation",
+      "Notifications importantes en temps réel"
     ],
-    image: "/img/dashboard-mobile.jpg" // À remplacer par votre image
+    image: "/img/dashboard-mobile.jpg"
   },
   {
     icon: <Receipt className="w-8 h-8 text-primary" />,
-    title: "Gestion des Factures",
+    title: "Gestion Simplifiée des Factures",
     details: [
-      "Liste complète de vos factures",
+      "Historique complet de vos factures",
       "Filtrage par statut (payées/en attente)",
-      "Détails des montants et échéances",
-      "Vue détaillée par facture"
+      "Détails de consommation par période",
+      "Options de paiement accessibles"
     ],
-    image: "/img/invoices-mobile.jpg" // À remplacer par votre image
+    image: "/img/invoices-mobile.jpg"
   },
   {
     icon: <LineChart className="w-8 h-8 text-primary" />,
-    title: "Suivi des Consommations",
+    title: "Suivi de la Consommation et Économies",
     details: [
-      "Historique des relevés",
-      "Données en temps réel",
-      "Visualisation par période"
+      "Historique détaillé des consommations",
+      "Comparaison entre différentes périodes",
+      "Conseils pour optimiser votre consommation",
+      "Estimation des économies réalisées"
     ],
-    image: "/img/consumption-mobile.jpg" // À remplacer par votre image
+    image: "/img/consumption-mobile.jpg"
   }
 ];
 
@@ -54,11 +56,10 @@ const MobileApp = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Application Mobile
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Une application mobile qui facilite le suivi de votre consommation d&apos;eau 
-            et la gestion de vos factures. Conçue pour être intuitive et efficace, 
-            elle vous permet d&apos;avoir une vision claire de votre consommation d&apos;eau 
-            et de vos paiements.
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            Une application dédiée qui accompagne les usagers dans le suivi de leur consommation d&apos;eau 
+            et la gestion de leurs paiements. Elle offre un accès simplifié aux informations essentielles 
+            et permet de réduire les problèmes de communication entre les différents acteurs.
           </p>
         </motion.div>
 
@@ -85,7 +86,7 @@ const MobileApp = () => {
                   {feature.details.map((detail, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-primary" />
-                      <span className="text-gray-600">{detail}</span>
+                      <span className="text-gray-800">{detail}</span>
                     </li>
                   ))}
                 </ul>
@@ -107,8 +108,6 @@ const MobileApp = () => {
             </motion.div>
           ))}
         </div>
-
-      
       </div>
     </section>
   );

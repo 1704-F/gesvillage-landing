@@ -17,7 +17,7 @@ const About = () => {
            animate={{ opacity: 1, y: 0 }}
            className="text-4xl md:text-5xl font-bold text-center mb-6"
          >
-           Ensemble, modernisons la gestion de l&apos;eau rurale
+           Vers une gestion transparente et efficace
          </motion.h1>
          <motion.p 
            initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const About = () => {
            transition={{ delay: 0.2 }}
            className="text-xl text-center max-w-3xl mx-auto"
          >
-           &ldquo;Vers une gestion transparente et efficace des forages au Sénégal&rdquo;
+           
          </motion.p>
        </div>
      </div>
@@ -45,10 +45,7 @@ const About = () => {
                <h2 className="text-2xl font-bold">Notre Vision</h2>
              </div>
              <p className="text-gray-600">
-               Contribuer à la réussite de la réforme de l&apos;hydraulique rurale au Sénégal 
-               en fournissant des outils numériques qui garantissent une gestion transparente 
-               et efficace des forages d&apos;eau, avec un taux d&apos;accès à l&apos;eau de 96% 
-               contre 30% dans la sous-région.
+               Contribuer à l&apos;amélioration de la gestion de l&apos;eau dans les zones rurales, en proposant des outils numériques qui facilitent une gestion transparente et efficace des forages d&apos;eau, favorisant un meilleur accès à l&apos;eau pour tous.
              </p>
            </motion.div>
 
@@ -63,9 +60,7 @@ const About = () => {
                <h2 className="text-2xl font-bold">Notre Mission</h2>
              </div>
              <p className="text-gray-600">
-               Accompagner les délégataires et les communautés locales dans la digitalisation 
-               de la gestion des forages d&apos;eau, en assurant une meilleure traçabilité des 
-               consommations et des paiements pour une gestion plus durable des ressources.
+               Accompagner les délégataires et les communautés locales dans la digitalisation de la gestion des forages d&apos;eau, en assurant un meilleur suivi des consommations et des paiements pour une gestion plus durable des ressources.
              </p>
            </motion.div>
          </div>
@@ -81,25 +76,25 @@ const About = () => {
            viewport={{ once: true }}
            className="text-3xl font-bold text-center mb-12"
          >
-           Pourquoi GesVillage au Sénégal ?
+           Pourquoi GesVillage ?
          </motion.h2>
          
          <div className="grid md:grid-cols-3 gap-8">
            {[
              {
                icon: <CheckCircle className="w-8 h-8 text-primary" />,
-               title: "Solution locale adaptée",
-               description: "Une plateforme conçue spécifiquement pour répondre aux défis de la réforme de l'hydraulique rurale au Sénégal."
+               title: "Solution adaptée aux besoins locaux",
+               description: "Une plateforme conçue spécifiquement pour répondre aux défis de gestion de l'eau dans les zones rurales."
              },
              {
                icon: <Users className="w-8 h-8 text-primary" />,
-               title: "Gestion transparente",
-               description: "Un suivi précis des consommations et des paiements pour une meilleure transparence financière."
+               title: "Double approche: numérique et solaire",
+               description: "Réduction des coûts d'exploitation grâce à l'énergie solaire et meilleure transparence financière."
              },
              {
                icon: <Droplet className="w-8 h-8 text-primary" />,
                title: "Accompagnement complet",
-               description: "Support technique et formation pour assurer une transition réussie vers une gestion numérique de l'eau."
+               description: "Support technique, formation et suivi pour assurer une gestion efficace et durable des ressources en eau."
              }
            ].map((item, index) => (
              <motion.div
@@ -125,12 +120,10 @@ const About = () => {
      <div className="bg-primary text-white py-20">
        <div className="container mx-auto px-4 text-center">
          <h2 className="text-3xl font-bold mb-6">
-           Participez à la modernisation de l&apos;hydraulique rurale
+           Optimisez la gestion de vos forages d&apos;eau
          </h2>
          <p className="text-xl mb-8 max-w-2xl mx-auto">
-           Que vous soyez un délégataire de service public ou une collectivité locale, 
-           découvrez comment GesVillage peut vous accompagner dans la gestion numérique 
-           de vos infrastructures hydrauliques.
+         Que vous soyez un délégataire de service public ou une collectivité locale, découvrez comment GesVillage peut vous aider à réduire vos coûts d&apos;exploitation et améliorer la gestion de vos infrastructures hydrauliques.
          </p>
          <Button className="bg-white text-primary hover:bg-gray-100">
            Contactez-nous

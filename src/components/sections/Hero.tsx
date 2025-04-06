@@ -38,13 +38,10 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600 m-0">
-            Modernisons la gestion de l&apos;eau au Sénégal
+            Modernisons la gestion de l&apos;eau dans les zones rurales
           </h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl">
-            Dans un contexte de réforme de l&apos;hydraulique rurale au Sénégal, GesVillage propose une 
-            solution innovante pour digitaliser et optimiser la gestion des forages d&apos;eau. Notre 
-            plateforme aide les communes et les délégataires à assurer une meilleure transparence, 
-            un suivi efficace et une gestion durable des ressources en eau.
+          <p className="text-xl text-gray-800 mb-12 max-w-2xl">
+            Dans un contexte de réforme de l&apos;hydraulique rurale, GesVillage propose une solution efficace pour digitaliser et optimiser la gestion des forages d&apos;eau. Notre plateforme facilite la transparence financière, réduit les coûts d&apos;exploitation grâce à l&apos;énergie solaire, et offre un suivi précis des consommations pour une gestion durable des ressources en eau.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
 
@@ -80,7 +77,7 @@ const Hero = () => {
                 <div className="p-2 bg-blue-100 rounded-lg">
                   <LineChart className="h-6 w-6 text-primary" />
                 </div>
-                <span>Relevés numériques fiables</span>
+                <span>Relevés numériques précis</span>
               </motion.div>
               
               <motion.div
@@ -92,7 +89,7 @@ const Hero = () => {
                 <div className="p-2 bg-blue-100 rounded-lg">
                   <Receipt className="h-6 w-6 text-primary" />
                 </div>
-                <span>Facturation transparente</span>
+                <span>Facturation simplifiée</span>
               </motion.div>
 
               <motion.div
@@ -104,7 +101,7 @@ const Hero = () => {
                 <div className="p-2 bg-blue-100 rounded-lg">
                   <Droplet className="h-6 w-6 text-primary" />
                 </div>
-                <span>Suivi en temps réel</span>
+                <span>Suivi de consommation</span>
               </motion.div>
 
               <motion.div
@@ -116,7 +113,7 @@ const Hero = () => {
                 <div className="p-2 bg-blue-100 rounded-lg">
                   <Smartphone className="h-6 w-6 text-primary" />
                 </div>
-                <span>Gestion mobile intuitive</span>
+                <span>Application mobile accessible</span>
               </motion.div>
             </div>
           </motion.div>

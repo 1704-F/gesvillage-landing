@@ -9,37 +9,37 @@ const featuresList = [
   {
     icon: <BarChart3 className="w-8 h-8 text-primary" />,
     title: "Gestion Numérique des Forages",
-    description: "Digitalisation complète du suivi des forages avec des relevés précis et une maintenance préventive",
+    description: "Digitalisation du suivi des forages avec des relevés précis et une maintenance planifiée pour éviter les pannes",
     image: "/img/compteur.jpg"
   },
   {
     icon: <Users2 className="w-8 h-8 text-primary" />,
-    title: "Gestion des ASUFOR",
-    description: "Facilitez la transition des ASUFOR vers une gestion moderne avec un suivi transparent des activités",
+    title: "Gestion des Communautés",
+    description: "Accompagnement des communautés rurales pour comprendre et optimiser leur consommation d'eau",
     image: "/img/conso.jpg"
   },
   {
     icon: <Wallet className="w-8 h-8 text-primary" />,
     title: "Facturation et Recouvrement",
-    description: "Réduisez les impayés grâce à un système de facturation clair et un suivi rigoureux des paiements",
+    description: "Réduction des impayés grâce à un système de facturation transparent et un suivi structuré des paiements",
     image: "/img/facture.jpg"
   },
   {
     icon: <LineChart className="w-8 h-8 text-primary" />,
-    title: "Rapports et Analyses",
-    description: "Générez des rapports détaillés sur la performance des forages et les taux de recouvrement",
+    title: "Suivi et Analyses",
+    description: "Tableaux de bord détaillés sur les performances des forages, la consommation et les taux de recouvrement",
     image: "/img/dashF.jpg"
   },
   {
     icon: <Bell className="w-8 h-8 text-primary" />,
-    title: "Supervision en Temps Réel",
-    description: "Suivez l'état des infrastructures et anticipez les besoins de maintenance",
+    title: "Contrôle de la Qualité de l'Eau",
+    description: "Suivi régulier des paramètres sanitaires pour garantir une eau potable aux communautés",
     image: "/img/alerte.jpg"
   },
   {
     icon: <Settings2 className="w-8 h-8 text-primary" />,
-    title: "Gestion Multi-sites",
-    description: "Gérez efficacement plusieurs forages avec une vision consolidée des performances",
+    title: "Intégration Énergie Solaire",
+    description: "Réduction significative des coûts d'exploitation grâce à l'utilisation de l'énergie solaire pour alimenter les forages",
     image: "/img/setting.jpg"
   }
 ];
@@ -59,15 +59,14 @@ const Features = () => {
           </motion.h2>
 
           <motion.p
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ delay: 0.2 }}
-  className="text-xl text-gray-600 max-w-2xl mx-auto"
->
-  Une solution complète pour accompagner la réforme de l&apos;hydraulique rurale et améliorer 
-  la gestion des forages au Sénégal
-</motion.p>
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-800 max-w-2xl mx-auto"
+          >
+            Une solution complète pour accompagner la gestion de l&apos;eau dans les zones rurales et réduire les coûts d&apos;exploitation des forages
+          </motion.p>
          
         </div>
 
@@ -94,7 +93,7 @@ const Features = () => {
                     {feature.icon}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="text-gray-800">{feature.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
