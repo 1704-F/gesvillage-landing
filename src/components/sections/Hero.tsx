@@ -52,7 +52,7 @@ const Hero = () => {
               </Button>
             </a>
 
-            <a href="/img/gesVillage.apk" download>
+            <a href="/img/gesvillage.1.2.apk" download>
    <Button 
      size="lg" 
      variant="outline"
