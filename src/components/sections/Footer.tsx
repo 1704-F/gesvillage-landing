@@ -1,5 +1,5 @@
 "use client"
-// src/components/Footer.tsx
+// src/components//sections/Footer.tsx
 import React from 'react';
 
 
